@@ -1,0 +1,49 @@
+.err-popup{
+    width: 30%;
+    margin: 0 auto;
+}
+.err-popup:before{
+    display: block;
+    content: '';
+    background-color: #000;
+    opacity: 0.6;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+.err-popup > div{
+    background: white;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding:10px;
+    border-radius: 8px;
+}
+.err-popup > div > div{
+    position: relative;
+    text-align: center;
+}
+.header{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    margin-bottom: 15px;
+}
+.content{
+    font-size: 18px;
+    font-weight: 500;
+}
+button{
+    margin-top: 10px;
+}
+@media (max-width: 815px){
+    .err-popup > div{
+        width: 90%;
+    }
+}

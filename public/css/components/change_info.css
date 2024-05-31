@@ -1,0 +1,111 @@
+.formbox {
+    max-width: 570px;
+    width: 100%;
+}
+.formbox h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: #201D56;
+}
+
+.formbox .divider {
+    width: 100%;
+    height: 2px;
+    margin: 11px 0 35px;
+    background-color: #D0D0D0;
+}
+.current_mail_container{
+    position: relative;
+    border: 2px solid #D2D2D2 !important;
+    border-bottom: 8px;
+    padding: 15px;
+    width: 450px;
+    color:#201D56;
+    height: 60px;
+    border-radius: 10px;
+}
+.current_mail_container label{
+
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    background: white;
+}
+.current_mail_container span{
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.graybox{
+    background-color: #F5F5F5;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.graybox .title{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.graybox .taraz{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.input_field_container{
+    position: relative;
+    border: 2px solid #D2D2D2 !important;
+    border-bottom: 8px;
+    padding: 15px;
+    width: 100%;
+    color:#201D56;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 25px;
+}
+.input_field_container label{
+    font-size: 17px;
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    background: white;
+    white-space: pre;
+}
+.input_field_container input{
+    width: 100%;
+    height: 40px;
+    margin-top: -6px;
+    border: 0;
+    font-weight: 500;
+}
+.input_field_container input:focus{
+    outline: none;
+}
+.btn-blackpurple{
+    width: 100%;
+    background: #201D56;
+    color: white;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px !important;
+}
+.btn-blackpurple:hover{
+    background: #292669;
+}
+@media (max-width: 900px){
+    .graybox,.current_mail_container,.formbox{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .current_mail_container span{
+        font-size: 15px;
+    }
+}
+.rtl_class .current_mail_container,.rtl_class .formbox h2{
+    text-align: right;
+}

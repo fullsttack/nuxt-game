@@ -1,0 +1,17 @@
+.nn-rounded {
+  @each $radius in $nn-border-radius {
+    &-#{$radius} {
+      border-radius: $radius + px;
+    }
+  }
+}
+
+@include md {
+  .nn-rounded-md {
+    @each $radius in $nn-border-radius-md {
+      &-#{$radius} {
+        border-radius: $radius + px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// background colors
+.nn-bg {
+    @each $color-name, $color in $background-colors {
+      &-#{$color-name} {
+        background-color: $color;
+      }
+    }
+  }
+
+// text colors
+.nn-text {
+    @each $color-name, $color in $text-colors {
+      &-#{$color-name} {
+        color: $color;
+      }
+    }
+  }  
+

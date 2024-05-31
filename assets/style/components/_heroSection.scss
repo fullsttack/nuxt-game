@@ -1,0 +1,140 @@
+.heroSection {
+    // height: 580px;
+    height: 615px;
+    // background-image: url(assets/images/hero-background.webp);
+    //background-image: url(/hero-background.webp);
+    background-image: url('/images/themes/theme9_2024/BuyBox1LQ.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    //background-position: bottom center; //not halloo
+    background-position: bottom -280px;
+    overflow: hidden;
+    position: relative;
+
+    @include md {
+        height: 668px;
+        margin-bottom: 30px;
+        background-position: top center;
+    }
+
+    @include lg {
+        // background-image: url(assets/images/hero-background-desktop.webp);
+       // background-image: url(/hero-background-desktop.webp);
+        background-image:  url('/images/themes/theme9_2024/HomeDesktopLQ.webp');
+        background-size: contain;
+    }
+
+    @include xxl {
+        background-size: cover;
+        height: 768px;
+    }
+
+    &_title {
+        font-size: 38px;
+        font-style: italic;
+        font-weight: 800;
+        letter-spacing: 3.8px;
+        color: transparent;
+        -webkit-text-stroke: 3px $whiteColor;
+        margin-bottom: -10px;
+
+        @include md {
+            font-size: 57px;
+            -webkit-text-stroke: 4px $whiteColor;
+            margin-bottom: -2px;
+        }
+    }
+
+    &_subtitle {
+        font-size: 37px;
+        font-style: italic;
+        font-weight: 800;
+        -webkit-text-stroke: 0.001px $whiteColor;
+        color:$whiteColor;
+        letter-spacing: initial;
+        margin-top: -2px;
+        @include md {
+            font-size: 52px;
+        }
+    }
+
+    &_trust {
+        font-weight: 700;
+
+        a:hover {
+            color: $whiteColor !important;
+            text-decoration: none;
+        }
+
+    }
+
+    &_button {
+        button {
+            border-radius: 6px;
+            color: $whiteColor;
+            font-size: 10px;
+            font-weight: 700;
+            border: none;
+
+            @include md {
+                border-radius: 9px;
+                font-size: 14px;
+            }
+        }
+
+        &_info {
+            position: relative;
+
+
+            button {
+                font-size: 15px;
+                font-style: italic;
+                font-weight: 800;
+
+                @include md {
+                    font-size: 21px;
+                }
+
+            }
+
+
+
+            &_icon {
+                position: absolute;
+                top: -46px;
+                left: -45px;
+
+                [dir=rtl] & {
+                    left: unset !important;
+                    right: -45px;
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
+                }
+
+                @include md {
+                    top: unset;
+                    left: -156px;
+
+                    [dir=rtl] & {
+                        left: unset !important;
+                        right: -156px;
+                    }
+                }
+
+            }
+        }
+
+        &_buy {
+            button {
+                font-size: 18px;
+                font-weight: 800;
+
+                @include md {
+                    font-size: 23px;
+                }
+
+            }
+        }
+
+    }
+}

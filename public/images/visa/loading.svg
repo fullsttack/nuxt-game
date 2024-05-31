@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#1f2223;" width="150px" height="150px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="">
+  <circle cx="50" cy="50" r="25" stroke-width="3" stroke="#35bbb8" stroke-dasharray="39.269908169872416 39.269908169872416" fill="none" stroke-linecap="round" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:#54cfcc;">
+    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1.639344262295082s" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+  </circle>
+</svg>

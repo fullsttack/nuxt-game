@@ -1,0 +1,13 @@
+:root {
+    --toastify-toast-width: 270px!important;
+    --toastify-color-error: #F94823!important;
+}
+.Toastify__toast {
+    top: 50px!important;
+    @include lg {
+        top: 170px!important;
+    }
+}
+.Toastify__toast-theme--light {
+    color: $neutral0!important;
+}

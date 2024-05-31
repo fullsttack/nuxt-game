@@ -1,0 +1,114 @@
+$whiteColor: #FFFFFF;
+$blackColor: #000000;
+
+
+$primary1: #F70D4D;
+$primary2: #DB025D;
+
+$neutral0: #201D56;
+$neutral1: #150B53;
+$neutral2: #34307C;
+$neutral3: #5751BC;
+$neutral4: #767FAA;
+$neutral5: #201D57;
+
+$gray0: #A9A9A9;
+$gray1: #AAA;
+$gray2: #838383;
+$gray3: #C8C8C8;
+$gray4: #C1C9D2;
+$gray5: #C8CFD6;
+$gray6: #748493;
+
+$blue0: #1349C3;
+
+$green0: #107C10;
+$green1: #18A085;
+$green2: #00E05F;
+
+$orange0: #E16C00;
+$orange1: #FF8C52;
+$orange2: #CE9E00;
+$orange3: #FF7600;
+
+$red0: #BF1D4A;
+$red1: #F94823;
+$red2: #EA3030;
+
+$purple0: #6B00AD;
+$purple1: #802AA9;
+
+// used background color
+$background-colors: (
+    neutral0: $neutral0,
+    neutral1: $neutral1,
+    ps4: $blue0,
+    xbox: $green0,
+    pc: $orange0,
+    red0: $red0,
+    purple0: $purple0,
+    orange2: $orange2,
+    whiteColor: $whiteColor,
+    green1: $green1,
+    primary1: $primary1,
+    none: unset
+);
+
+// used text color
+$text-colors: (
+    gray0: $gray0,
+    gray3: $gray3,
+    green1: $green1,
+    orange1: $orange1,
+    primary1: $primary1,
+    whiteColor: $whiteColor,
+    blackColor: $blackColor,
+);
+
+// special background
+.nn-bg-selectedTab {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+;
+
+.nn-bg-stadia {
+    background: linear-gradient(180deg, #BF1D4A 0%, #F94823 100%);
+}
+
+;
+
+.nn-bg-stepper-content {
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(2px);
+    @include md {
+        // background: rgba(21, 11, 83, 0.30);
+        background: rgba(208, 199, 228, 0.3);
+    }
+}
+
+.nn-bg-payment {
+    background: rgba(125, 135, 175, 0.89);
+}
+
+.nn-bg-blur-3 {
+    background: rgba(21, 11, 83, 0.30);
+    backdrop-filter: blur(2px);
+}
+
+.nn-bg-white-3 {
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.nn-bg-white-2 {
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.nn-bg-transparent {
+    background: transparent;
+}
+
+.nn-text-transparent {
+    color: transparent!important;
+}
+

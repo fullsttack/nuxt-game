@@ -1,0 +1,133 @@
+@use "sass:math";
+
+//grid variables
+$grid-columns-base: 12;
+$grid-columns: (5,6, 7, 12);
+$grid-columns-md: (5, 6, 7, 12);
+
+$grid-gaps:(4);
+$grid-gaps-md:(8);
+
+$justify-values:(end, center, space-around, space-between);
+$justify-values-md:(end, space-around, space-between);
+
+$align-values:(center, end);
+$align-values-md:();
+
+$text-align-values:(center, start);
+
+// base 
+.nn-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nn-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+// text align 
+.nn-text {
+    @each $val in $text-align-values {
+        &-#{$val} {
+            text-align: $val;
+        }
+    }
+}
+
+//justify content 
+.nn-justify {
+    @each $val in $justify-values {
+        &-#{$val} {
+            justify-content: $val;
+        }
+    }
+}
+
+@include md {
+    .nn-justify-md {
+        @each $val in $justify-values-md {
+            &-#{$val} {
+                justify-content: $val;
+            }
+        }
+    }
+}
+
+// align content
+.nn-align {
+    @each $val in $align-values {
+        &-#{$val} {
+            align-items: $val;
+        }
+    }
+}
+
+@include md {
+    .nn-align-md {
+        @each $val in $align-values-md {
+            &-#{$val} {
+                align-items: $val;
+            }
+        }
+    }
+}
+
+// grid gaps
+.nn-gap {
+    @each $gapSize in $grid-gaps {
+        &-#{$gapSize} > * {
+            padding-inline: #{$gapSize}px;
+        }
+        &-#{$gapSize} {
+            margin-inline: -#{$gapSize}px;
+        }
+    }
+}
+
+@include md {
+    .nn-gap-md {
+        @each $gapSize in $grid-gaps-md {
+            &-#{$gapSize} > * {
+                padding-inline: #{$gapSize}px;
+            }
+            &-#{$gapSize} {
+                margin-inline: -#{$gapSize}px;
+            }
+        }
+    }
+}
+
+//col classes
+.nn-col {
+    @each $i in $grid-columns {
+        &-#{$i} {
+            box-sizing: border-box;
+            flex-grow: 0;
+            width: math.div($i * 100%, $grid-columns-base);
+        }
+    }
+
+}
+
+@include md {
+    .nn-col-md {
+        @each $i in $grid-columns-md {
+            &-#{$i} {
+                box-sizing: border-box;
+                flex-grow: 0;
+                width: math.div($i * 100%, $grid-columns-base);
+            }
+        }
+
+    }
+}
+
+//other 
+.nn-cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Changa';
+    src: url('/fonts/changa/Changa-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.rtl_class * {
+    font-family: 'Changa' !important;
+}
+.rtl_class   .header__top-bar-inner{
+    justify-content: flex-end;
+}
+.rtl_class .header--layout-1 .header__primary::after
+,.rtl_class  .header--layout-2 .header__primary::after
+,.rtl_class  .header--layout-3 .header__primary::after
+,.rtl_class  .header--layout-4 .header__primary::after
+,.rtl_class  .header--layout-5 .header__primary::after{
+    right:inherit !important;
+    left: 0 !important;
+}
+.rtl_class .header-logo{
+    right: 0 !important;
+    left: inherit !important;
+}
+.rtl_class .info-block{
+    margin-right: 215px !important;
+    margin-left: inherit !important;
+    font-family: 'NotoSansArabic' !important;
+}
+
+.rtl_class .header__primary-inner{
+    padding-left: 0;
+    padding-right: 18%;
+}
+.rtl_class .mr-2, .mx-2 {
+    margin-right: inherit !important;
+    margin-left: 0.5rem !important;
+}
+@media (min-width: 1900px) {
+    .rtl_class .header-logo img{
+        max-width: 14vw;
+        margin-right: -8vw;
+        top: 35px;
+    }
+}
+@media (max-width: 1601px){
+    .rtl_class .header-logo{
+        bottom: 30px;
+        left: -15vw;
+        right: -100px !important;
+    }
+}
+.rtl_class .transfer-method,.coin-amount__container > .info__container
+,.rtl_class .login__container
+,.rtl_class .summary > table
+{
+    direction: rtl !important;
+}
+.rtl_class .faq__container.desktop .faq--itemm
+,.rtl_class .question__container h2
+,.rtl_class .summary > span
+,.rtl_class .summary > table
+,.rtl_class .main-nav .main-nav__list > li > a
+,.rtl_class .faq--item
+,.rtl_class .userinfo-menu
+,.rtl_class  .last-paraph ul li
+,.rtl_class .last-paraph p
+,.rtl_class .question__container > div > div p
+,.rtl_class .faq--question h3{
+    text-align: right !important;
+}
+.rtl_class .features__container .feature .description
+,.rtl_class footer .content > div,
+.rtl_class .video-des{
+    text-align: right;
+}
+.rtl_class .faq--question.active img
+,.rtl_class .tableArea .buy-btn img
+,.rtl_class footer .content .news-letter .send img
+,.rtl_class footer .payment-methods
+,.rtl_class .login__container .login:first-child .user-login-info .button img
+,.rtl_class .nav-arrow .arrows{
+    transform: rotate(180deg);
+}
+.rtl_class footer .content .news-letter .send{
+    right: inherit !important;
+    left: 5px !important;
+}
+.rtl_class footer .payment-methods{
+    float:inherit !important;
+}
+.rtl_class .post__container,.blog__container .top .right,
+.rtl_class .pagination{
+    direction: ltr;
+}
+.rtl_class .nav-account .nav-account__item.has-children ul li a
+,.rtl_class .nav-account .nav-account__item.has-children ul li .ahref{
+    padding: 6px 40px 0px 70px !important;
+    font-family: 'Montserrat' !important;
+}
+.rtl_class .mr-4,.rtl_class .mx-4 {
+    margin-right: 0 !important;
+}
+.rtl_class .input-container .icon{
+    right: 15px !important;
+    left: inherit;
+}
+.rtl_class .input-container input{
+    padding-left: 15px;
+    padding-right: 40px;
+}
+.rtl_class .input-container input::placeholder{
+    text-align: right;
+}
+.rtl_class .graybox a span{
+    font-family: 'Changa' !important;
+}
+.rtl_class .rtl-flex{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.rtl_class .nav-account .nav-account__item.has-image a{
+    justify-content: space-around;
+}
+@media (max-width: 768px){
+    .rtl_class .header-logo img{
+        right: 65%;
+    }
+    .rtl_class .nav-arrow.phone{
+        flex-direction: row-reverse;
+    }
+    .rtl_class .auth_popup{
+        left: 0;
+    }
+    .rtl_class .userinfo-menu{
+        right: inherit !important;
+        left: 0;
+    }
+    .lang-li{
+        padding: 25px !important;
+    }
+    .rtl_class .tableArea tbody tr td:nth-child(6) img{
+        transform:scale(0.7) rotate(180deg) !important;
+    }
+    .rtl_class .tableArea tbody tr td:nth-child(5) span{
+        left: 0 !important;
+    }
+    .rtl_class .nav-account .nav-account__item.has-children ul li a
+    ,.rtl_class .nav-account .nav-account__item.has-children ul li .ahref{
+        padding: 12px 20px 9px!important;
+
+    }
+}

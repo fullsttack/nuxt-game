@@ -1,0 +1,9 @@
+// global style
+@import "./global/abstracts";
+@import "./global/grid";
+@import "./global/utilities";
+@import "./global/globalClass";
+
+// component style
+@import "./components/buyBox";
+@import "./components/heroSection";

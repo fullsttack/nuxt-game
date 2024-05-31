@@ -1,0 +1,227 @@
+.payment__container {
+    position: relative;
+    top: -56px;
+    margin: auto;
+    width: 100%;
+    max-width: 776px;
+    padding: 17px 42px;
+    background: white;
+    filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.161));
+    border-radius: 10px;
+}
+
+.payment__container .top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+    color: #201d56;
+    font-size: 17px;
+}
+
+.payment__container .payment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment__container .payment-info .payment-info__item.phone {
+    display: none;
+}
+
+.payment__container .payment-info .payment-info__item {
+    display: flex;
+    align-items: center;
+}
+
+.payment__container
+.payment-info
+.payment-info__item
+.payment-info__item--title {
+    width: 242px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #201d56;
+}
+
+.payment__container
+.payment-info
+.payment-info__item
+.payment-info__item--value {
+    color: #000000;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.payment__container
+.payment-info
+.payment-info__item
+.payment-info__item--value.price {
+    display: flex;
+    gap: 17px;
+}
+
+.payment__container
+.payment-info
+.payment-info__item
+.payment-info__item--value.price
+span:first-of-type {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.payment__container img.console {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    height: 100%;
+    max-height: 170px;
+    object-fit: cover;
+}
+
+.help-box__container {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    background: #fff7de;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #201d56;
+    padding: 17px 11px;
+    margin: auto;
+    max-width: 1348px;
+    text-align: justify;
+}
+
+.help-box__container svg {
+    position: relative;
+    top: 3px;
+}
+
+.help-box__container span span {
+    color: #35bbb8;
+}
+
+.transfer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 353px;
+    margin: 28px auto;
+    margin-bottom: 64px;
+    background: #f70d4d;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    height: 58px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .payment__container {
+        padding: 20px 14px;
+        top: 0;
+        margin: 12px;
+        width: auto;
+    }
+
+    .payment__container .payment-info {
+        gap: 18px;
+    }
+
+    .payment__container > img.console {
+        display: none;
+    }
+
+    .payment__container .top {
+        font-size: 14px;
+    }
+
+    .payment-info__item {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .payment-info__item:last-of-type .payment-info__item--title,
+    .payment-info__item:last-of-type .payment-info__item--value {
+        font-weight: bold !important;
+    }
+
+    .payment-info__item.phone {
+        display: flex !important;
+        position: relative;
+    }
+
+    .payment-info__item.phone img {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 74px;
+    }
+
+    .payment-info__item.phone::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #d9d9d9;
+        width: calc(100% - 73px);
+        height: 2px;
+        right: 0;
+    }
+
+    .payment-info__item .payment-info__item--title {
+        font-size: 14px !important;
+        width: auto !important;
+    }
+
+    .payment-info__item .payment-info__item--value {
+        font-size: 14px !important;
+    }
+
+    .transfer-button {
+        max-width: 100% !important;
+        margin-top: 0;
+        margin-bottom: 27px;
+        font-size: 14px;
+    }
+
+    .help-box__container {
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .help-box__container span span {
+        font-weight: bold;
+    }
+
+    .help-box__container svg {
+        min-width: 15px !important;
+    }
+
+    .bottom__container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        padding: 0 12px;
+    }
+    .trasncation{
+        width: 100%;
+    }
+}
+.trasncation{
+    word-wrap: break-word;
+    width: 70%;
+}

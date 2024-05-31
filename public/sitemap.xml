@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="main-sitemap.xsl"?>
+<urlset
+		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>https://whatsgaming.net/sitemap-main.xml</loc>
+	</url>
+	<url>
+		<loc>https://whatsgaming.net/sitemap-blog.xml</loc>
+	</url>
+</urlset>
+

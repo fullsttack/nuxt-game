@@ -1,0 +1,48 @@
+// extra small devices
+@mixin xs {
+    @media screen and (min-width: map-get($display-breakpoints, 'xs') ) {
+        @content;
+    }
+ }
+
+// small devices
+@mixin sm {
+    @media screen and (min-width: map-get($display-breakpoints, 'sm') ) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media screen and (min-width: map-get($display-breakpoints, 'md') ) {
+        @content;
+    }
+ }
+ 
+ // laptop devices
+ @mixin lg {
+    @media screen and (min-width: map-get($display-breakpoints, 'lg') ) {
+        @content;
+    }
+ }
+ 
+ // desktop devices
+ @mixin xl {
+    @media screen and (min-width: map-get($display-breakpoints, 'xl') ) {
+        @content;
+    }
+ }
+
+ // Extra large devices
+ @mixin xxl {
+    @media screen and (min-width: map-get($display-breakpoints, 'xxl') ) {
+        @content;
+    }
+ }
+
+ // Custom devices
+@mixin custom-breakpoint ($screen) {
+   @media screen and (min-width: $screen) {
+       @content;
+   }
+}

@@ -1,0 +1,130 @@
+.title-h2{
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #201d56;
+}
+.text-center{
+    text-align: center;
+}
+.p-des{
+    font-size: 14px;
+}
+.box-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.medal-box{
+    width: 20%;
+    padding: 10px;
+    margin: 0 0 40px;
+    background-color: white;
+    margin: 10px;
+    min-height: 350px;
+    min-width: 200px;
+    padding-top: 45px;
+}
+.medal-box-bronze{
+    color: #a3684d;
+    border: 1px solid #a3684d;
+    box-shadow: 0px 0px 8px 0px rgba(163,104,77,0.5);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(163,104,77,0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(163,104,77,0.5);
+}
+.medal-box-silver{
+    color: #a6a9ab;
+    border: 1px solid #a6a9ab;
+    box-shadow: 0px 0px 8px 0px rgba(166,169,171,0.5);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(166,169,171,0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(166,169,171,0.5);
+}
+.medal-box-gold{
+    color: #ffcc02;
+    border: 1px solid #ffcc02;
+    box-shadow: 0px 0px 8px 0px rgba(255, 204, 2, 0.5);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 204, 2,0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255, 204, 2,0.5);
+}
+.medal-box-platin{
+    color: #201d56;
+    border: 1px solid #201d56;
+    box-shadow: 0px 0px 8px 0px rgba(32, 29, 86, 0.5);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(32, 29, 86, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(32, 29, 86, 0.5);
+}
+.medal-box-diamond{
+    color: #28b5f5;
+    border: 1px solid #28b5f5;
+    box-shadow: 0px 0px 8px 0px rgba(40, 181, 245, 0.5);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(40, 181, 245,0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(40, 181, 245, 0.5);
+}
+.medal-box div:first-child{
+    background-size: contain;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0px;
+    /* margin-top: 50px; */
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat' !important;
+}
+.hold-image-bronze {
+    background: url(/images/loyalty/bronze.png) no-repeat 50% 0;
+}
+.hold-image-silver{
+    background: url(/images/loyalty/silver.png) no-repeat 50% 0;
+}
+.hold-image-gold{
+    background: url(/images/loyalty/gold.png) no-repeat 50% 0;
+}
+.hold-image-platin{
+    background: url(/images/loyalty/platin.png) no-repeat 50% 0;
+}
+.hold-image-diamond{
+    background: url(/images/loyalty/diamond.png) no-repeat 50% 0;
+}
+.medal-box .title1{
+    display: block;
+    color: #757575;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 500;
+    -webkit-text-stroke: 0.3px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+.medal-box div:nth-child(2){
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.medal-box .title2{
+    display: block;
+    color: #757575;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 0.3px;
+    width: 90%;
+    margin: 0 auto;
+}
+.text-percent {
+    display: block;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    height: 45px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.text-percent .title-percent {
+    font-size: 14px;
+    line-height: 16px;
+}
