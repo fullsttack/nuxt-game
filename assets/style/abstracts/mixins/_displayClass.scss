@@ -1,0 +1,17 @@
+.nn-d {
+    @each $display in $nn-display {
+      &-#{$display} {
+        display: $display;
+      }
+    }
+  }
+
+  @include md {
+    .nn-d-md {
+      @each $display in $nn-display-md {
+        &-#{$display} {
+          display: $display;
+        }
+      }
+    }
+  }

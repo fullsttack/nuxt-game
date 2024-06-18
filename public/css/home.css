@@ -1,0 +1,112 @@
+/*
+// #Hero Unit
+// --------------------------------------------------
+*/
+html { scroll-behavior: smooth !important; }
+.hero-unit {
+  /*background: url("../svg/top-bg.svg");*/
+  /*background-size: auto 460px;*/
+  /*background-repeat: no-repeat;*/
+  background: rgb(201,201,201);
+  background: linear-gradient(180deg, rgba(201,201,201,0.9512137618719363) 0%, rgba(201,201,201,0.01) 90%);
+  overflow-x: hidden;
+}
+
+.hero-unit__container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 2%;  
+  margin-top: 20px !important;
+}
+@media (min-width: 1024px) {
+  .hero-unit__container {
+    margin-top: 95px !important;
+  }
+}
+
+.hero-unit img {
+  position: absolute;
+  width: 35vw;
+  height: auto;
+  margin-top: 50px;
+}
+
+.hero-unit img:first-child {
+  left: 0.5%;
+}
+
+.hero-unit img:nth-child(2) {
+  right: 1%;
+}
+
+.hero-unit__title {
+  color: #fff;
+  margin-bottom: 0.75em;
+  font-size: 30px;
+}
+
+@media (min-width: 100px) and (max-width: 480px) {
+  .hero-unit {
+    background: url("../svg/header-bg.svg");
+    height: max-content;
+  }
+}
+
+.h-list .list_item a span{
+  font-size: 14px !important;
+}
+.owl-carousel .owl-item img{
+  width: 65%;
+  float: right;
+  margin-right: 15px !important;
+}
+.video-des{
+  max-width: 60% !important;
+  text-align: justify;
+}
+.faq--question span,.faq--question.active,.faq--item{
+  font-size: 13.5px;
+}
+.bg-purple{
+  background-color: #EEEDFF;
+}
+.faq--item{
+  font-weight: 300;
+}
+
+.question__container,.faq--question,.bottom__container,td{
+  font-family: 'Montserrat' !important;
+}
+.xbox-btom{
+  bottom: 18px !important;
+}
+@media (max-width: 768px) {
+  .mobile-console  .console{
+    height: 75px !important;
+  }
+  .bottom__container .mobile-console .console .logo{
+    margin-top: 10px!important;
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .bottom__container .mobile-console .console .logo img{
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .bottom__container .mobile-console .console img{
+    width: 100%;
+    height: 16px;
+    transform: scale(1.2);
+  }
+  .bottom__container .console-list .console:first-child > img,.bottom__container .console-list .console:nth-child(2) > img{
+    transform:scale(0.6);
+  }
+  .bottom__container .console-list .console:nth-child(3) > img{
+    transform:scale(0.95);
+    bottom: 7px !important;
+  }
+  .bottom__container .console-list .console:last-child > img{
+    bottom: 12px;
+  }
+}

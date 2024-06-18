@@ -1,0 +1,42 @@
+// widths
+.nn-width {
+    @each $widthName,
+    $widthSize in $widthSizes {
+        &-#{$widthName} {
+            width: $widthSize;
+        }
+
+    }
+}
+
+@include md {
+    .nn-width-md {
+        @each $widthName,
+        $widthSize in $widthSizes-md {
+            &-#{$widthName} {
+                width: $widthSize;
+            }
+        }
+    }
+}
+
+// heights
+.nn-height {
+    @each $heightName,
+    $heightSize in $heightSizes {
+        &-#{$heightName} {
+            height: $heightSize;
+        }
+    }
+}
+
+@include md {
+    .nn-height-md {
+        @each $heightName,
+        $heightSize in $heightSizes-md {
+            &-#{$heightName} {
+                height: $heightSize;
+            }
+        }
+    }
+}

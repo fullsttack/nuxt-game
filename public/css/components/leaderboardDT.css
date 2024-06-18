@@ -1,0 +1,226 @@
+.title{
+    font-size:var(--font-size-24px);
+}
+.title span:first-child{
+    font-weight: 500;
+}
+.date-line{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.date-line > div{
+    cursor: pointer;
+}
+.date-line .date{
+    font-size: var(--font-size-14px);
+    color:#666666
+}
+.date-line .calender{
+    font-size: var(--font-size-14px);
+    font-weight: bold;
+    color:#171C26;
+}
+.date-line img{
+    margin-top: -0.5px;
+}
+.tableArea{
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    margin-top: 45px;
+    width: 100% !important;
+    margin: 0 auto;
+    max-width: 1038px;
+    background-color:#E2E2E2 !important;
+    /*filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.161));*/
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tableArea thead{
+    min-height: 50px !important;
+    height: 50px;
+    background-color: #201D57;
+    font-size: var(--font-size-15px);
+}
+.tableArea thead th{
+    color:#FFFFFF;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #201d57!important;
+}
+.tableArea tbody:before{
+    content: '';
+    height: 5px;
+    display: block;
+}
+.tableArea tbody tr td{
+    padding: 10px;
+    text-align: center;
+}
+.td-coins{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--font-size-15px);
+}
+.fw-r{
+    font-weight: normal;
+}
+.fw-m{
+    font-weight: 500;
+}
+.fs-12{
+    font-size: var(--font-size-12px);
+
+}
+.td-price{
+    color:#35BBB8;
+    font-size: var(--font-size-15px);
+}
+.last-update{
+    color:#171C26;
+    margin-top: 5px;
+}
+.pagination-btn {
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #201d57!important;
+    background: #fff!important;
+    border-radius: 100%!important;
+    color: #201d57!important;
+    font-weight: 700!important;
+}
+
+.pagination {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pagination button {
+    background-color: transparent;
+    line-height: 0;
+    border: 2px solid #201D57;
+    border-radius: 999px;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    font-weight: bold;
+    font-size: 13px;
+    color:#201D57;
+    padding-top: 0px;
+    /*padding-left: 7px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination button:first-child,
+.pagination button:last-child{
+    padding-top: 3px;
+}
+.pagination button:disabled {
+    opacity: .3;
+}
+
+.pagination button:not(:disabled):hover {
+    background-color: #201D57;
+    color: #fff;
+}
+
+.pagination button:disabled:hover {
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background-color: #201D57;
+    color: #fff !important;
+}
+
+.pagination button:first-child, .pagination button:last-child {
+    width: 25px;
+    height: 25px;
+}
+.skeletonloading{
+    border-radius: 8px;
+    background-color: gray;
+    animation: skeletonLoadingAnimation 1.5s infinite ease-in-out;
+}
+.skeletonloading tbody{
+    width: 100%;
+    height: 100%;
+    background-color:#E2E2E2 !important;
+    opacity: 0.5;
+}
+.loadingtxt{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+@keyframes skeletonLoadingAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+@media(max-width: 800px){
+    .date-line{
+        padding:0;
+    }
+    .date-line .date{
+        font-size: 9px;
+    }
+    .date-line .calender{
+        font-size: var(--font-size-14px);
+        font-weight: bold;
+        color:#171C26;
+    }
+    .tableArea thead th{
+        font-size: 9px !important;
+    }
+    .tableArea thead th:first-child{
+        padding-left: 10px;
+    }
+    .tableArea thead th:nth-child(2){
+        min-width: 60px;
+    }
+    .tableArea tbody tr td:first-child *{
+        margin-right: -10px;
+        margin-left: 10px;
+    }
+    .tableArea tbody tr td:first-child img{
+        width: 20px;
+        height: 21px;
+    }
+    .tableArea tbody tr td:nth-child(2){
+        font-size: 8px;
+        max-width: 45px;
+    }
+    .tableArea tbody tr td:nth-child(3),
+    .tableArea tbody tr td:nth-child(4),
+    .tableArea tbody tr td:last-child{
+        font-size: 7px;
+    }
+    .td-coins{
+        font-size: 7px !important;
+        font-weight: 500;
+    }
+    .td-coins img{
+        width: 9px;
+        height: 9px;
+    }
+    .pagination{
+        margin-top: 20px;
+    }
+}

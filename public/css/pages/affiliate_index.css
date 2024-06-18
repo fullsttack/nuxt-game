@@ -1,0 +1,457 @@
+.title-1{
+    font-size: 23px;
+    color:#201D56;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.affillate_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5px 10px 5px;
+    border-bottom: 3px solid #E6E6E6;
+    margin-bottom: 15px;
+}
+.btn-teal{
+    background-color: #35BBB8;
+    color:white;
+    width: 153px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 5px;
+}
+.bg-content{
+    background-color: #F5F5F5;
+    padding: 35px;
+    min-height: 240px;
+    padding-top: 50px;
+}
+.title-2{
+    font-size: 20px;
+    color:#201D56;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.taraz{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+.taraz2{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.taraz3{
+    display: flex;
+    justify-content: space-between;
+}
+.input-container{
+    padding-left: 10px;
+    font-weight: 500;
+    background: transparent;
+    border: 3px solid #D2D2D2;
+    height: 45px;
+    border-radius: 8px;
+}
+.input-container input,.input-container .inpt{
+    background-color: transparent;
+    padding: 10px;
+    padding-left: 0;
+    font-weight: 500;
+}
+.input-container input:focus{
+    outline: none;
+}
+.input-container input{
+    font-size: var(--font-size-16px);
+    padding-top: 9px;
+}
+.inpt{
+    font-size: var(--font-size-15px);
+}
+.input-container .copybtn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #201D56;
+    color:white;
+    padding: 0;
+    height: 40px;
+    border-radius: 8px;
+    line-height: 40px;
+    width: max-content;
+    min-width: 110px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.input-container .copybtn:hover{
+    background-color: #2e2a86;
+}
+.copybtn span{
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+.title-light{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+.date-input::before {
+    content: url('/images/affiliate/input_date_icon.svg');
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transform: scale(0.9);
+}
+.date-input{
+    padding-left: 28px !important;
+    padding-top: 8px !important;
+    min-width: 170px;
+    font-size: 16px !important;
+}
+.date-input:focus{
+    outline: none;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+    background-image:  url('/images/affiliate/arrow_down.svg');
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.custom-tbl-responsive{
+    width: 100%;
+    margin:0 auto;
+}
+.custom-tbl-responsive th,.custom-tbl-responsive td{
+    min-width: 25%;
+    text-align: center;
+    line-height: 20px;
+}
+.custom-tbl-responsive td{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    line-height: 30px;
+}
+.blnce{
+    text-align: center;
+    margin-left: 4%;
+}
+.blnce p{
+    line-height: 15px;
+}
+.payment-tbl tbody::before,.payment-tbl tbody::after{
+    height: inherit;
+}
+.btn-wd{
+    border-radius: 0;
+    height: 55px;
+    margin-top: -8px;
+}
+.payment-tbl th{
+    background-color:#CCCCCC;
+    padding:10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.payment-tbl td{
+    text-align: center !important;
+    line-height: 30px;
+}
+
+
+.paywdfix .dropdown{
+    width: 200px;
+}
+.affillate-input1{
+    height: 50px !important;
+    border-radius: 12px !important;
+}
+.only-desktop{
+    display: block;
+}
+.only-phone{
+    display: none;
+}
+
+.payment-tbl:before,.payment-tbl:after{
+    height: 0px;
+}
+.payment-details-tbl th{
+    height: 46px;
+    background-color: #CCCCCC;
+}
+.scroll-res{
+    display: none;
+}
+@media (max-width: 768px) {
+    .only-desktop{
+        display: none !important;
+    }
+    .scroll-res{
+        display: table-row !important;
+    }
+    .only-phone{
+        display: block !important;
+    }
+    .container-affiliate{
+        margin-top: 20px;
+    }
+    .title-1{
+        font-size: 16px;
+    }
+    .title-2{
+        font-size: 15px;
+    }
+    .title-light,.description{
+        font-size: 13px !important;
+    }
+    .blnce{
+        margin-left: 0 !important;
+    }
+    .blnce p:first-child{
+        font-size: 13px !important;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .blnce p:last-child{
+        font-size: 15px !important;
+    }
+    .affillate_header{
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .taraz3-responsive {
+        display: block;
+    }
+    .datebox{
+        justify-content: center;
+    }
+    .btn-teal{
+        cursor: pointer;
+        width: 110px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .copybtn span {
+        text-transform: capitalize;
+        font-size: 10px;
+        padding-top: 1px;
+        font-weight: normal;
+    }
+    .copybtn img{
+        width: 18px;
+        height: 18px;
+    }
+    .copybtn{
+        height: 32px !important;
+        margin-right: 2px !important;
+        border-radius: 8px !important;
+        min-width: 95px !important;
+    }
+
+    .banner-responsive{
+        justify-content: flex-start !important;
+        flex-direction: row !important;
+        font-size: 15px !important;
+    }
+    .banner-responsive img{
+        width: 29px;
+        height: 29px;
+    }
+    .custom-tbl-responsive td{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .custom-tbl-responsive{
+        display: block;
+        width: 100%;
+        overflow: auto;
+    }
+    .affillate_header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bg-content {
+        padding: 10px;
+        min-height: 240px;
+        padding-top: 25px;
+    }
+    .col-mob-fix{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        margin-top: 25px;
+    }
+    .col-mob-fix div{
+        max-width: 100%;
+        width: 100%;
+    }
+    /*.taraz3,.taraz{*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    flex-direction: column;*/
+    /*    margin: 0 auto;*/
+    /*    align-items: center;*/
+    /*}*/
+    .datebox{
+        display: flex;
+        flex-direction: row;
+        line-height: 15px;
+        margin-top: 15px !important;
+        transform: scale(0.85);
+        margin-bottom: -10px;
+    }
+    .date-input::before{
+        content: '';
+    }
+    .date-input{
+        padding-left: 10px !important;
+        padding-top: 13.5px !important;
+    }
+    .datebox div{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+
+    }
+    .datebox input{
+        max-width: 100px !important;
+    }
+    .custom-tbl-responsive th{
+        white-space: pre;
+        background-color: inherit !important;
+        font-size: 13px !important;
+        font-weight: 500;
+        min-width: 100px;
+    }
+    tbody:before,tbody:after{
+        height: 10px;
+    }
+    .payment-tbl:before,.payment-tbl:after{
+        height: 0;
+    }
+    .paywdfix{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        transform: scale(0.9);
+        align-items: flex-start;
+        width: 100%;
+    }
+    .res-fix{
+        margin:0 !important;
+        width: 100% !important;
+    }
+    .paywdfix .dropdown{
+        width: 100% !important;
+    }
+    .input-container{
+        width: 100%;
+    }
+    .pre{
+        white-space: pre;
+        padding-left: 10px !important;
+    }
+    .flx{
+        display: flex;
+        gap: 10px;
+    }
+    .payment-tbl td{
+        line-height: 40px;
+    }
+    .table1-res th{
+        background-color: #e0dddd;
+        padding: 10px;
+    }
+    .table1-res td{
+        line-height: 30px;
+    }
+    input[type="date"]:before {
+        color: black;
+        content: attr(placeholder) !important;
+        /* margin-right: -1px; */
+        font-size: 15px;
+        /* margin-left: 0.5px; */
+        padding-top: 3px;
+    }
+    .resDateInput:before {
+        display: none;
+    }
+    .res-addr-input{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    .res-addr-input input{
+        width: 180px;
+    }
+    .paymethod-res-box{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .scroll-res{
+        width: 100%;
+        height: 5px;
+        background-color: transparent;
+        border: 1px solid gray;
+        margin-top: 5px;
+        border-radius: 8px !important;
+    }
+    .scroll-res td:nth-child(3){
+        background-color: #C5C5C5;
+    }
+    .payment-tbl{
+        border: 2px solid rgba(51, 51, 51, 0.16);
+    }
+    .inpt{
+        padding: 0;
+        padding-right: 30% !important;
+        line-height: 16px;
+        padding-top: 6px !important;
+        font-size: 12px !important;
+    }
+    .input-container input{
+        font-size: 13px !important;
+        padding-top: 11px;
+        font-weight: 500;
+    }
+}
+.blurred-code{
+    filter: blur(3px) contrast(99) drop-shadow(2px 4px 6px black);
+    -webkit-filter: blur(3px) contrast(99) drop-shadow(2px 4px 6px black);
+    -moz-filter:  blur(3px) contrast(99) drop-shadow(2px 4px 6px black);
+    -o-filter:  blur(3px) contrast(99) drop-shadow(2px 4px 6px black);
+    -ms-filter:  blur(3px) contrast(99) drop-shadow(2px 4px 6px black);
+}
+.rtl_class .title-light{
+    display: flex;
+}

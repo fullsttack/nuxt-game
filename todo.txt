@@ -1,0 +1,5 @@
+pages/[[lang]]/fifa-coins/fifa-23.vue
+need add pagination, check styles
+
+pages/[[lang]]/sell-accounts.vue
+handle errors, translates

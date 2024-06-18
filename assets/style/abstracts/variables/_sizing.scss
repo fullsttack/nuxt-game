@@ -1,0 +1,64 @@
+// widths
+$widthSizes: (
+  full: 100%,
+  30: 30px,
+  58: 58px,
+  64: 64px,
+  86: 86px,
+  95: 95px,
+  110: 110px,
+  124: 124px,
+  166: 166px,
+  196: 196px,
+  340: 340px,
+  360: 360px,
+  min: min-content
+);
+$widthSizes-md: (
+  44: 44px,
+  58: 58px,
+  100: 100px,
+  125: 125px,
+  149: 149px,
+  236: 236px,
+  254: 254px,
+  262: 262px,
+  476: 476px,
+  542: 542px,
+);
+
+// heights
+$heightSizes: (
+  full: 100%,
+  2: 2px,
+  12: 12px,
+  18: 18px,
+  36: 36px,
+  38: 38px,
+  42: 42px,
+  46: 46px,
+  48: 48px,
+  44: 44px,
+  118: 118px,
+  242: 242px,
+  265: 265px,
+);
+
+$heightSizes-md: (
+  4: 4px,
+  18: 18px,
+  30: 30px,
+  42: 42px,
+  50: 50px,
+  56: 56px,
+  58: 58px,
+  62: 62px,
+  74: 74px,
+  164: 164px,
+  242: 242px,
+);
+
+
+.nn-minWidth-maxContent {
+  min-width: max-content;
+}
