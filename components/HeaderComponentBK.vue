@@ -343,7 +343,7 @@ import {computed, ref, watch} from "vue";
 import AuthpopupPro from "./embeded/authpopupPro";
 
 import { storeToRefs } from 'pinia';
-import { useCheckOutCardStore } from '@/stores/checkOutCard'; 
+import { useCheckOutCardStore } from '@/stores/checkOutCard';
 
 export default {
   name: 'HeaderComponent',

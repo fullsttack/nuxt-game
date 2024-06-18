@@ -3,16 +3,19 @@
     <div style="margin: 0 auto;" id="onload-display">
       <on-ready-loading/>
     </div>
-    <HeaderComponent/>
+    <LazyHeaderComponent/>
     <div>
       <slot />
     </div>
-    <FooterComponent/>
-    <FooterPhoneNav/>
+    <NuxtLazyHydrate when-visible>
+
+    <LazyFooterComponent/>
+    <LazyFooterPhoneNav/>
 <!--    <a class="wa_support" target="_blank" :href="'https://t.me/whatsgamingsupport'">-->
 <!--      <nuxt-img loading="lazy" alt="contact support fixed icon" src="/svg/wa.svg"/>-->
 <!--    </a>-->
     <contact-support/>
+    </NuxtLazyHydrate>
     <div v-if="cookie_accept_show" class="d-flex container mt-5" style="position: fixed;bottom: 3%;z-index: 99;">
       <div class="row">
         <div class="col-md-10">
@@ -29,11 +32,10 @@
 </template>
 
 <script>
-import FooterComponent from "../components/FooterComponent.vue";
+
 import HeaderComponent from "../components/HeaderComponent.vue";
 import UseUtils from "../composables/useUtils";
-import OnReadyLoading from "../components/blocks/OnReadyLoading";
-import FooterPhoneNav from "../components/FooterPhoneNav";
+// import OnReadyLoading from "../components/blocks/OnReadyLoading";
 // import {bootstrap} from 'vue-gtag';
 import {useUserStore} from "~/stores/userStore";
 import {api} from "../composables/api";
@@ -80,9 +82,7 @@ export default {
   },
   components: {
     ContactSupport,
-    FooterPhoneNav,
-    OnReadyLoading,
-    FooterComponent,
+    // OnReadyLoading,
     HeaderComponent},
   created() {
 

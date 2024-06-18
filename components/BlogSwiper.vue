@@ -28,7 +28,7 @@
         :breakpoints="swiperOptions.breakpoints"
         @swiper="onSwiper"
       >
-        <swiper-slide class="post--item" v-for="news in last_news.data.blogs.data" style="min-height: 330px;">
+        <swiper-slide class="post--item" v-for="news in last_news" style="min-height: 330px;">
           <NuxtLink :to="urlwithLocal('blog/'+news.bd_subject_link)">
             <nuxt-img alt="blog image" loading="lazy" :src="getBlogImage(news)" width="100" height="170"/>
           </NuxtLink>
@@ -95,7 +95,8 @@ export default {
       }
       return await blogapi.post('/index',payload);
     }
-    const last_news = await getLastNews();
+    const resp = await getLastNews();
+    const last_news = resp?.data?.blogs?.data || []
 
     return {last_news,urlwithLocal}
   },
@@ -143,7 +144,6 @@ export default {
       return 'https://blogadmin.whatsgaming.net/uploads/blogs/thumb_'+blog.blog_picture;
     },
   },
-
   components: {
     Swiper,
     SwiperSlide,

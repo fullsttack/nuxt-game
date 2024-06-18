@@ -6,7 +6,7 @@ footer {
     min-height: 290px;
     height: 100%;
     color: white;
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat";
 }
 .res-only{
     display: none;

@@ -439,10 +439,10 @@ footer {
     max-height: 320px;
     height: 100%;
     color: white;
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat";
 }
 .faq--item {
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat";
 }
 footer .content {
     display: flex;

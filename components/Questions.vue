@@ -55,7 +55,7 @@ export default {
     const item_selected = ref(null);
     let regex = /&(nbsp|amp|quot|lt|gt);/g;
     SSRRequest.get('questions?category=' + props.category).then((res)=>{
-      if(res.data.length !== 0){
+      if(res?.data?.length > 0){
         faqs.value = res.data;
         items.value = faqs.value.map((i, key) => {
           i.question = i.question.replace(/<[^>]*>/g, '').replace(regex, " ");

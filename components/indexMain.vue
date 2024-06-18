@@ -1,7 +1,8 @@
 <template>
   <div>
-    <HeroSection  @goTo-faq="scrollToTargetAdjusted('faq-section')" />
-    <div class="container faq-mob faqfix" id="faq-section">
+
+    <LazyHeroSection  @goTo-faq="scrollToTargetAdjusted('faq-section')" />
+        <div class="container faq-mob faqfix" id="faq-section">
     <!-- <div class="container faq-mob" > -->
       <div class="section_title text-center mb-4 mt-md-4">
         <div class="faq_title">
@@ -17,9 +18,9 @@
       </div>
     </div>
     <div class="container" >
-      <Questions :category="'home'"></Questions>
+      <LazyQuestions :category="'home'"></LazyQuestions>
     </div>
-    <Features id="scroll-query-flag"></Features>
+    <LazyFeatures id="scroll-query-flag"></LazyFeatures>
     <evolation-new nuxt-client />
 
 <!--    <evolationold/>-->
@@ -29,21 +30,18 @@
       </div>
     </div>
     <div>
-      <ReviewSwiper/>
+      <LazyReviewSwiper/>
     </div>
     <div>
-      <BlogSwiper/>
+      <LazyBlogSwiper/>
     </div>
   </div>
-  <NuxtImg style="display: none;" preload src="/images/themes/theme9_2024/BuyBox1LQ.webp" />
 </template>
 
 <script>
 //import { defineAsyncComponent } from 'vue'
 import HeroSection from "./HeroSection";
 import {
-  hydrateOnInteraction,
-  hydrateNever,
   hydrateWhenIdle,
   hydrateWhenVisible,
 } from 'vue-lazy-hydration';

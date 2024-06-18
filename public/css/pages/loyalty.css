@@ -69,7 +69,7 @@
     /* margin-top: 50px; */
     padding-top: 30px;
     font-weight: bold;
-    font-family: 'Montserrat' !important;
+    font-family: 'Montserrat';
 }
 .hold-image-bronze {
     background: url(/images/loyalty/bronze.png) no-repeat 50% 0;

@@ -127,7 +127,7 @@ onMounted(()=>{
 }
 .compontent-content{
   font-size: 16px;
-  font-family: 'Montserrat' !important;
+  font-family: 'Montserrat';
   -webkit-text-stroke: 0.13px;
   text-align: justify;
 }

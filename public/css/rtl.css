@@ -146,7 +146,7 @@
 .rtl_class .nav-account .nav-account__item.has-children ul li a
 ,.rtl_class .nav-account .nav-account__item.has-children ul li .ahref{
     padding: 6px 40px 0px 70px !important;
-    font-family: 'Montserrat' !important;
+    font-family: 'Montserrat';
 }
 .rtl_class .mr-4,.rtl_class .mx-4 {
     margin-right: 0 !important;
