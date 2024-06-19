@@ -48,23 +48,29 @@ export default {
         });
       }
     })
-    if (process.client) {
-      let iframe = document.createElement('iframe')
-      iframe.src = 'https://www.googletagmanager.com/ns.html?id=GTM-525HWXH'
-      iframe.height = '0'
-      iframe.width = '0'
-      iframe.style = 'display:none;visibility:hidden'
-      let noscript = document.createElement('noscript')
-      noscript.prepend(iframe)
-      document.body.prepend(noscript)
-    }
+    // if (process.client) {
+    //   let iframe = document.createElement('iframe')
+    //   iframe.src = 'https://www.googletagmanager.com/ns.html?id=GTM-525HWXH'
+    //   iframe.height = '0'
+    //   iframe.width = '0'
+    //   iframe.style = 'display:none;visibility:hidden'
+    //   let noscript = document.createElement('noscript')
+    //   noscript.prepend(iframe)
+    //   document.body.prepend(noscript)
+    // }
 
     if (process.client && user.id) {
       window.Echo.channel('user_balance_' + user.id).listen('UserBalance', ({data}) => {
         user.coins = data.coins
       })
     }
-    onMounted(()=>{
+    onMounted(async ()=>{
+      await import('~/public/vendor/bootstrap/css/bootstrap.css');
+      await import('~/assets/style/main.scss');
+      await import('~/public/css/main.css');
+      await import('~/public/css/rtl.css');
+
+
       const vkey = 'APP_VERSION';
       const vvalue = localStorage.getItem(vkey);
       $fetch('/api/version').then((res)=>{

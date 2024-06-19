@@ -22,7 +22,7 @@ export default {
       "name": "Whatsgaming",
       "alternateName": "Whatsgaming Fut Coins",
       "url": "https://whatsgaming.net/" + langCode,
-      "logo": "https://whatsgaming.net/_ipx/_/images/logo_4.png",
+      // "logo": "https://whatsgaming.net/_ipx/_/images/logo_4.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+989999797725",

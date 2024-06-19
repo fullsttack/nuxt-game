@@ -125,7 +125,7 @@
               <a id="header-mobile__toggle" class="burger-menu-icon"><span style="width: 17px"
                   class="burger-menu-icon__line"></span></a>
               <a :href="urlwithLocal('')">
-                <nuxt-img loading="lazy" width="auto" height="auto" src="/images/logo_4.png" alt="Alchemists" class="header-logo__img" />
+                <nuxt-img loading="lazy" width="auto" height="auto" format="webp" src="/images/logo_4.png" alt="Alchemists" class="header-logo__img" />
                 <!--                <span>Noting Else Matters!</span>-->
               </a>
             </div>

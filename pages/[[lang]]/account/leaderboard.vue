@@ -42,11 +42,11 @@ import leaderboardModes from "../../../components/leaderboard/leaderboardModes";
 }
 .title1{
   font-weight: bold;
-  font-family: 'Montserrat' !important;
+  font-family: 'Montserrat';
 }
 .title2{
   font-weight: 500;
-  font-family: 'Montserrat' !important;
+  font-family: 'Montserrat';
 }
 .mainTitle{
   font-size:var(--font-size-24px);

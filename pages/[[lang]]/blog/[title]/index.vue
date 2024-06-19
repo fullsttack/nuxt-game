@@ -389,7 +389,7 @@ const schema_org_data =  {
     "name": "Whatsgaming",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://whatsgaming.net/_ipx/_/images/logo_4.png"
+      // "url": "https://whatsgaming.net/_ipx/_/images/logo_4.png"
     }
   },
   "datePublished": (new Date(blog.blog_submitteddate * 1000)).toISOString().substr(0,10),
@@ -541,7 +541,7 @@ h2 {
   padding-left: 30px;
 }
 .ct_table li{
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat";
   font-weight: 500;
   margin-top: 5px;
   font-size: 17px;

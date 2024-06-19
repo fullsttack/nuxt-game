@@ -171,7 +171,7 @@
 .nav-account .nav-account__item > a .highlight,.header-section .highlight {
   font-weight: bold;
   margin-inline-start: 10px;
-  font-family: 'Montserrat' !important;
+  font-family: 'Montserrat';
 }
 
 .nav-account .nav-account__item .country {
