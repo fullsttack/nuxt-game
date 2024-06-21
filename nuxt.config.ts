@@ -40,9 +40,9 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public:{
-            BLOG_BASE_URL:'https://blogadmin.whatsgaming.net/',
-            API_URL:'https://api.whatsgaming.net/',
-            APP_URL:'https://whatsgaming.net',
+            BLOG_BASE_URL: process.env.BLOG_BASE_URL,
+            API_URL:process.env.WEBSITE_API,
+            APP_URL:process.env.APP_URL,
             BUILD_VERSION:date.getTime()
         }
     },
@@ -54,7 +54,7 @@ export default defineNuxtConfig({
                 class:'notranslate'
             },
             title: 'Whatsgaming',
-            base: {href: 'https://whatsgaming.net'},
+            base: {href: process.env.APP_URL},
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
             meta: [
